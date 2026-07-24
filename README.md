@@ -23,23 +23,26 @@ nothing is ever charged.
 
 ## Install
 
-Run it straight from the repo with [uv](https://docs.astral.sh/uv/):
+Add this to your MCP client config:
 
 ```json
 {
   "mcpServers": {
     "pagewatch": {
       "command": "uvx",
-      "args": ["--from", "git+https://github.com/toolshedlabs-hash/pagewatch-mcp", "pagewatch-mcp"]
+      "args": ["pagewatch-mcp"]
     }
   }
 }
 ```
 
-Or with pip:
+That is it. [uv](https://docs.astral.sh/uv/) fetches the package on first run, and your first tool call
+returns real content.
+
+Or install it yourself with pip:
 
 ```bash
-pip install git+https://github.com/toolshedlabs-hash/pagewatch-mcp
+pip install pagewatch-mcp
 ```
 
 ```json
