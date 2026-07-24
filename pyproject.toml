@@ -1,0 +1,22 @@
+[project]
+name = "pagewatch-mcp"
+version = "0.1.0"
+description = "MCP server that gives an agent a real browser: url to markdown, screenshot a url, url to pdf. No signup."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["mcp", "web", "markdown", "screenshot", "pdf", "scraping", "agent"]
+dependencies = [
+    "mcp>=1.2.0",
+    "httpx>=0.27",
+]
+
+[project.scripts]
+pagewatch-mcp = "pagewatch_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["pagewatch_mcp"]
