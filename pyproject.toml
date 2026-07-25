@@ -1,6 +1,6 @@
 [project]
 name = "pagewatch-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "MCP server that gives an agent a real browser: url to markdown, screenshot a url, url to pdf. No signup."
 readme = "README.md"
 requires-python = ">=3.10"

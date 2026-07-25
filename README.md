@@ -1,3 +1,5 @@
+mcp-name: dev.pagelens/pagewatch
+
 # pagewatch-mcp
 
 An MCP server that gives an agent a real browser. Three tools:
